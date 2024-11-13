@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev's Portfolio</title>
+    <style>
+        /* General reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header styling */
+        .header {
+            text-align: center;
+            padding: 2rem;
+            background-color: #333;
+            color: #fff;
+            animation: fadeIn 1.5s ease-in;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            animation: slideIn 1.5s ease-in-out;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+        }
+
+        /* Profile Image */
+        .profile-image {
+            text-align: center;
+            margin: 1.5rem 0;
+            animation: scaleIn 1.5s ease-out;
+        }
+
+        .profile-image img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #333;
+            transition: transform 0.3s ease;
+        }
+
+        .profile-image img:hover {
+            transform: scale(1.1);
+            border-color: #e63946;
+        }
+
+        /* Section styling */
+        section {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        /* About Section */
+        .about p {
+            max-width: 600px;
+            margin: 1rem auto;
+            line-height: 1.6;
+            color: #555;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        /* Portfolio Section */
+        .portfolio {
+            background-color: #f0f0f0;
+            padding: 2rem;
+            color: #333;
+        }
+
+        .project {
+            max-width: 600px;
+            margin: 1rem auto;
+            padding: 1.2rem;
+            border: 1px solid #ddd;
+            background-color: #fff;
+            animation: bounceIn 1.5s ease-out;
+            border-left: 5px solid #e63946;
+        }
+
+        /* Reviews Section */
+        .reviews {
+            background-color: #333;
+            color: #fff;
+            padding: 2rem;
+        }
+
+        .review {
+            max-width: 600px;
+            margin: 1rem auto;
+            padding: 1.2rem;
+            border: 1px solid #444;
+            background-color: #444;
+            animation: zoomIn 1.5s ease-out;
+        }
+
+        /* Footer styling */
+        .footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #222;
+            color: #fff;
+            font-size: 0.9rem;
+            animation: fadeIn 1.5s ease-in;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(-20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes bounceIn {
+            0% { transform: scale(0.9); opacity: 0; }
+            60% { transform: scale(1.1); opacity: 1; }
+            100% { transform: scale(1); }
+        }
+
+        @keyframes zoomIn {
+            from { transform: scale(0.8); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+
+        @keyframes scaleIn {
+            from { transform: scale(0.5); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <h1>Welcome to Dev's Portfolio</h1>
+        <p>Passionate about Cloud and DevOps Solutions</p>
+    </header>
+
+    <!-- Profile Image Section -->
+    <div class="profile-image">
+        <img src="https://myterrafromprojectprotfolio.s3.us-east-1.amazonaws.com/profile.png" alt="Profile Image">
+    </div>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm Dev, a DevOps and Cloud enthusiast skilled in Terraform, AWS, and S3 bucket management.</p>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <h2>Portfolio Projects</h2>
+        <div class="project">
+            <h3>Project: AWS S3 Bucket with Terraform</h3>
+            <p>This project involved creating and managing an AWS S3 bucket using Terraform. The configuration allows for secure, scalable, and cost-effective storage of objects, automating infrastructure management in the cloud.</p>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews" id="reviews">
+        <h2>Reviews</h2>
+        <div class="review">
+            <p>"Dev demonstrated a strong understanding of Terraform and AWS management. The S3 bucket project was completed efficiently and exceeded expectations."</p>
+            <p><strong>- Project Reviewer</strong></p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2024 Dev's Portfolio | Contact: dev@example.com</p>
+    </footer>
+
+</body>
+</html>
