@@ -1,0 +1,59 @@
+# What is Yaml
+# 1. YAML is human readable data serialization format
+# 2. YAML is commonly used for configuration files and data exchange between systems
+# 3. YAML is designed to be easy to read and write, making it popular among developers and system administration
+# 4. YAML uses indentation and colons to structure data here's an example of YAML syntax:
+   #Example Syntax:
+   key: value
+   nested_key:
+    - item1
+    - item2
+
+
+
+--- # for bestpractices use these
+#Scalars
+string_key: Hello, World!
+number_key: 42
+boolean_key: true
+null_key: null
+
+#Lists
+lists_key:
+  - item1
+  - item2
+  - sub_list:
+    - sub_item1
+    - sub_item2
+
+#Mapping
+Person:
+  name: Jhon Doe
+  age: 30
+
+#Multiline Scalars
+multiline_key:
+  This is a 
+  multiline scalar value
+
+
+
+# Example YAML:
+---
+#Sacalrs
+name: Revanth
+location: vijayawada
+profession: IT
+#Lists
+Hobbies:
+  - Reading
+  - Playing Cricket, Online Games
+  - Music
+#Mapping
+FavoriteFoods:
+  Fruits: Mango
+  Drinks: Coke
+#MultilinerScalar
+thisfileisabout:
+  this file discusses about
+  YAML syntax and how to use it
